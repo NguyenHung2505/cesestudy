@@ -6,10 +6,13 @@ function jump (){
     dino.classList.add("jump-animation");
     setTimeout(() =>{
         dino.classList.remove('jump-animation');
-    }, 3000);
+        // jump-animation: nhảy hoạt cảnh
+    }, 2000);
 }
 
-window.addEventListener('keydown', () =>{
+
+ // sự kiện liên kết phím ấn thả
+window.addEventListener('keypress', () =>{
     if(!dino.classList.contains('jump-animation')){
         jump();
     }
@@ -17,6 +20,7 @@ window.addEventListener('keydown', () =>{
 
 setInterval(()=> {
     score.innerText++;
+     // ghi bàn trong..++.
     const dinoTop = parseInt(window.getComputedStyle(dino)
         .getPropertyValue('top'));
     const rockLeft = parseInt(window.getComputedStyle(rock)
@@ -26,8 +30,8 @@ setInterval(()=> {
     } else{
         rock.style.display ='';
     }
-
-    if (rockLeft < 130 && rockLeft > 0 && dinoTop > 150){
+ // toạ độ khi bị va chạm giữa ngựa và vật
+    if (rockLeft < 140 && rockLeft > 100 && dinoTop >200){
         alert("you got a score of:" + score.innerText +
             "\n\nPlay again?");
         location.reload();

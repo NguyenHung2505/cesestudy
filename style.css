@@ -5,10 +5,13 @@
 }
 
 #game {
+    /*phông nền , khung*/
     width: 700px;
     height: 700px;
     border: 2px solid black;
+    /*sdung biên 2px, màu đen cứng */
     margin: auto;
+    /*margin: lề*/
     background: url("nen.jpg");
     background-size: cover
 }
@@ -17,23 +20,27 @@
     height: 130px;
     width: 190px;
     position: relative;
+    /*con ngựa sẽ đc đứng yên ở toạ độ*/
     top: 570px;
+    left: 50px;
     background-image: url("ngua.gif");
     background-size: cover;
 }
 
 #rock {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     position: relative;
-    top: 545px;
-    left: 700px;
+    /*vị trí tương đối*/
+    top: 535px;
+    left: 750px;
     background-image: url("chay.png");
     background-size: cover;
-    animation: rock 15.0s infinite;
+    animation: rock 3s infinite;
 }
 
 @keyframes rock {
+    /*nơi bắt đầu dần chuyển đến cuối (chướng ngại)*/
     0% {
         left: 660px
     }
@@ -43,18 +50,22 @@
 }
 
 .jump-animation {
-    animation: jump 3s alternate;
+/*(thời gian rơi của ngựa - luân phiên)*/
+    animation: jump 1.5s alternate;
 }
 
 @keyframes jump {
     0% {
+        /*điểm bắt đầu khi dùng phím*/
         top: 570px;
     }
     50% {
-        top: 450px;
+        /*điểm đến giới hạn*/
+        top: 475px;
     }
 
     100% {
+        /*điểm kết thúc*/
         top: 570px;
     }
 }
