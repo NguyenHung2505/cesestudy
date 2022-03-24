@@ -1,0 +1,60 @@
+
+
+#score {
+    text-align: center;
+}
+
+#game {
+    width: 700px;
+    height: 700px;
+    border: 2px solid black;
+    margin: auto;
+    background: url("nen.jpg");
+    background-size: cover
+}
+
+#dino {
+    height: 130px;
+    width: 190px;
+    position: relative;
+    top: 570px;
+    background-image: url("ngua.gif");
+    background-size: cover;
+}
+
+#rock {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 545px;
+    left: 700px;
+    background-image: url("chay.png");
+    background-size: cover;
+    animation: rock 15.0s infinite;
+}
+
+@keyframes rock {
+    0% {
+        left: 660px
+    }
+    100% {
+        left: -50px
+    }
+}
+
+.jump-animation {
+    animation: jump 3s alternate;
+}
+
+@keyframes jump {
+    0% {
+        top: 570px;
+    }
+    50% {
+        top: 450px;
+    }
+
+    100% {
+        top: 570px;
+    }
+}
