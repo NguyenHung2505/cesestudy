@@ -1,4 +1,4 @@
-
+body{background: linear-gradient(90deg, #ff14e0 0px, #e082ee 100%);}
 
 #score {
     text-align: center;
@@ -12,7 +12,7 @@
     /*sdung biên 2px, màu đen cứng */
     margin: auto;
     /*margin: lề*/
-    background: url("nen.jpg");
+    background: url("hoaanhdao.gif");
     background-size: cover
 }
 
@@ -34,7 +34,7 @@
     /*vị trí tương đối*/
     top: 535px;
     left: 750px;
-    background-image: url("chay.png");
+    background-image: url("chayy.png");
     background-size: cover;
     animation: rock 3s infinite;
 }
@@ -42,16 +42,16 @@
 @keyframes rock {
     /*nơi bắt đầu dần chuyển đến cuối (chướng ngại)*/
     0% {
-        left: 660px
+        left: 700px
     }
     100% {
-        left: -50px
+        left: 0px
     }
 }
 
 .jump-animation {
 /*(thời gian rơi của ngựa - luân phiên)*/
-    animation: jump 1.5s alternate;
+    animation: jump 1.2s alternate;
 }
 
 @keyframes jump {
