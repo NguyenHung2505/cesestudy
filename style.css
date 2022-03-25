@@ -1,4 +1,13 @@
-body{background: linear-gradient(90deg, #ff14e0 0px, #e082ee 100%);}
+
+
+
+
+
+body{background-image: url(
+"https://media4.giphy.com/media/XsArsE4bys8kE/giphy.gif?cid=ecf05e47gj6v0e915zgcr40vqrpk41nqbwn0ogk2zc1jqrzq&rid=giphy.gif&ct=g");
+background-position: center;
+    background-size: cover;
+}
 
 #score {
     text-align: center;
@@ -13,7 +22,10 @@ body{background: linear-gradient(90deg, #ff14e0 0px, #e082ee 100%);}
     margin: auto;
     /*margin: lề*/
     background: url("hoaanhdao.gif");
-    background-size: cover
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px palevioletred;
+    opacity: 0.9;
 }
 
 #dino {

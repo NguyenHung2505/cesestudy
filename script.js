@@ -13,7 +13,7 @@ function start() {
         setTimeout(() =>{
             dino.classList.remove('jump-animation');
             // jump-animation: nhảy hoạt cảnh
-        }, 2000);
+        }, 1800);
     }
 
 
