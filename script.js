@@ -17,6 +17,7 @@ function start() {
     }
 
 
+
     // sự kiện liên kết phím ấn thả
     window.addEventListener('keypress', () =>{
         if(!dino.classList.contains('jump-animation')){
