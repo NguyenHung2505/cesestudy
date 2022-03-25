@@ -22,10 +22,13 @@ background-position: center;
     margin: auto;
     /*margin: lề*/
     background: url("hoaanhdao.gif");
+    /*bo cạnh*/
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 0px 0px 50px palevioletred;
-    opacity: 0.9;
+    /*bóng của khung*/
+    box-shadow: 0px 0px 500px palevioletred;
+    /*độ trong của hình*/
+    opacity: 1;
 }
 
 #dino {
